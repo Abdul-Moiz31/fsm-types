@@ -1,4 +1,4 @@
-# typestate
+# fsm-types
 
 Compile-time state machine enforcement for TypeScript.
 Invalid transitions are type errors — not runtime crashes.
@@ -7,9 +7,9 @@ Zero dependencies. No XState. No class instances.
 ## Install
 
 ```bash
-npm install typestate
+npm install fsm-types
 # or
-pnpm add typestate
+pnpm add fsm-types
 ```
 
 ## The problem
@@ -29,8 +29,8 @@ out until a customer's order breaks.
 ## The solution
 
 ```typescript
-import { createMachine, send, transition } from 'typestate'
-import type { MachineState } from 'typestate'
+import { createMachine, send, transition } from 'fsm-types'
+import type { MachineState } from 'fsm-types'
 
 const orderMachine = createMachine({
   initial: 'pending',
@@ -136,10 +136,10 @@ XState is a full runtime state management system — actors, services,
 parallel states, history states, invoked promises. It is the right
 tool for complex UI state that needs to be visualized and debugged.
 
-typestate is for enforcing business logic transitions at the type level.
+fsm-types is for enforcing business logic transitions at the type level.
 No runtime overhead, no configuration syntax to learn, no actor model.
 If your use case is "make invalid order status transitions a compile error",
-typestate is ten lines of config.
+fsm-types is ten lines of config.
 
 ## License
 

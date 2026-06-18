@@ -1,5 +1,5 @@
 {
-  "name": "typestate",
+  "name": "fsm-types",
   "version": "0.1.0",
   "description": "Compile-time state machine enforcement for TypeScript — invalid transitions are type errors",
   "keywords": [

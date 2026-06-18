@@ -2,11 +2,11 @@
  * Order lifecycle — compile-time enforced state transitions.
  *
  * `db` and `shipOrder` are minimal stand-ins for your real database client
- * and shipping logic — swap them for the real things. The typestate usage
+ * and shipping logic — swap them for the real things. The fsm-types usage
  * (createMachine, send, can, transition, inState) is the point.
  */
-import { createMachine, send, can, transition, inState } from 'typestate'
-import type { MachineState } from 'typestate'
+import { createMachine, send, can, transition, inState } from 'fsm-types'
+import type { MachineState } from 'fsm-types'
 
 // --- stand-in for your real database client ---
 declare const db: {
