@@ -7,9 +7,9 @@ Zero dependencies. No XState. No class instances.
 ## Install
 
 ```bash
-npm install fsm-types
+npm install @iamabdulmoiz/fsm-types
 # or
-pnpm add fsm-types
+pnpm add @iamabdulmoiz/fsm-types
 ```
 
 ## The problem
@@ -29,8 +29,8 @@ out until a customer's order breaks.
 ## The solution
 
 ```typescript
-import { createMachine, send, transition } from 'fsm-types'
-import type { MachineState } from 'fsm-types'
+import { createMachine, send, transition } from '@iamabdulmoiz/fsm-types'
+import type { MachineState } from '@iamabdulmoiz/fsm-types'
 
 const orderMachine = createMachine({
   initial: 'pending',
