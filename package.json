@@ -1,7 +1,7 @@
 {
-  "name": "fsm-types",
+  "name": "@iamabdulmoiz/fsm-types",
   "version": "0.1.0",
-  "description": "Compile-time state machine enforcement for TypeScript — invalid transitions are type errors",
+  "description": "Compile-time state machine enforcement for TypeScript \u2014 invalid transitions are type errors",
   "keywords": [
     "typescript",
     "state-machine",
@@ -22,7 +22,10 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
@@ -31,6 +34,8 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "tsup": "^8.0.0",
     "typescript": "^5.4.0",
     "vitest": "^1.6.0"

@@ -5,8 +5,8 @@
  * and shipping logic — swap them for the real things. The fsm-types usage
  * (createMachine, send, can, transition, inState) is the point.
  */
-import { createMachine, send, can, transition, inState } from 'fsm-types'
-import type { MachineState } from 'fsm-types'
+import { createMachine, send, can, transition, inState } from '@iamabdulmoiz/fsm-types'
+import type { MachineState } from '@iamabdulmoiz/fsm-types'
 
 // --- stand-in for your real database client ---
 declare const db: {
