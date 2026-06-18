@@ -35,12 +35,12 @@ export function send<
   const currentStateConfig = machine.config.states[machine.state] as StateConfig
 
   if (currentStateConfig.terminal) {
-    throw new Error(`typestate: cannot transition from terminal state "${machine.state}"`)
+    throw new Error(`fsm-types: cannot transition from terminal state "${machine.state}"`)
   }
 
   const nextState = currentStateConfig.on?.[event]
   if (!nextState) {
-    throw new Error(`typestate: no transition from "${machine.state}" on event "${event}"`)
+    throw new Error(`fsm-types: no transition from "${machine.state}" on event "${event}"`)
   }
 
   return {
